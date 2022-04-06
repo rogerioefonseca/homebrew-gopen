@@ -9,10 +9,9 @@ class Gopen < Formula
 
   def install
     bin.install "gopen"
-    bin.install Dir["lib"]
-    bin.install Dir["files"]
-    prefix.install "README.md"
-    prefix.install "LICENSE"
   end
 
+  test do
+    system "#{bin}/gopen"
+  end
 end
