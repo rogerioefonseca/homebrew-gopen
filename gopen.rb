@@ -8,9 +8,7 @@ class Gopen < Formula
   sha256 "ff4e9e2e4943cb55fb87e24763e2bd770a92be7eaee2e389a302d322413c7be4"
   license "MIT"
 
-  # depends_on "cmake" => :build
-
   def install
-    bin.install "gopen"
+    system "mv build/gopen-darwin-amd64 /usr/local/bin/gopen"
   end
 end
